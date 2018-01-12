@@ -12,10 +12,16 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:theme="@style/campickerTheme"
+            android:name="com.camstarts.campicker.PhotoPickerActivity" />
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name="com.camstarts.campicker.PhotoPagerActivity" />
     </application>
 
 </manifest>

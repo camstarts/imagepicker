@@ -5,9 +5,10 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
 /**
- * Created by donglua on 15/6/21.
+ * Created by Cam Starts on 18/1/12.
  */
 public class SquareItemLayout extends RelativeLayout {
+
   public SquareItemLayout(Context context, AttributeSet attrs, int defStyle) {
     super(context, attrs, defStyle);
   }

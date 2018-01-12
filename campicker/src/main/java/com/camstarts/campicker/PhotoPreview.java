@@ -9,7 +9,7 @@ import android.support.annotation.NonNull;
 import java.util.ArrayList;
 
 /**
- * Created by Donglua on 16/6/25.
+ * Created by Cam Starts on 18/1/12.
  * Builder class to ease Intent setup.
  */
 public class PhotoPreview {

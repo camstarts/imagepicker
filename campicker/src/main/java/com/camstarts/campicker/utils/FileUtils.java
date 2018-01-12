@@ -3,8 +3,7 @@ package com.camstarts.campicker.utils;
 import java.io.File;
 
 /**
- * Created by myc on 2016/12/14.
- * More Code on 1101255053@qq.com
+ * Created by Cam Starts on 18/1/12.
  * Description:
  */
 public class FileUtils {

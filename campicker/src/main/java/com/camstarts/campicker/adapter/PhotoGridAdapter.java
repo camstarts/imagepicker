@@ -110,8 +110,8 @@ public class PhotoGridAdapter extends SelectableAdapter<PhotoGridAdapter.PhotoVi
         options.centerCrop()
             .dontAnimate()
             .override(imageSize, imageSize)
-            .placeholder(R.drawable.picker_ic_photo)
-            .error(R.drawable.ic_broken_image_black);
+            .placeholder(R.drawable.ic_campicker_photo)
+            .error(R.drawable.ic_campicker_photo_broken);
 
         glide.setDefaultRequestOptions(options)
                 .load(new File(photo.getPath()))
@@ -153,7 +153,7 @@ public class PhotoGridAdapter extends SelectableAdapter<PhotoGridAdapter.PhotoVi
       });
 
     } else {
-      holder.ivPhoto.setImageResource(R.drawable.ic_picker_camera);
+      holder.ivPhoto.setImageResource(R.drawable.ic_campicker_camera);
     }
   }
 

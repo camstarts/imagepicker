@@ -23,7 +23,8 @@ import static com.camstarts.campicker.PhotoPreview.EXTRA_PHOTOS;
 import static com.camstarts.campicker.PhotoPreview.EXTRA_SHOW_DELETE;
 
 /**
- * Created by donglua on 15/6/24.
+ * Created by Cam Starts on 18/1/12.
+ * Builder class to ease Intent setup.
  */
 public class PhotoPagerActivity extends AppCompatActivity {
 
@@ -71,7 +72,7 @@ public class PhotoPagerActivity extends AppCompatActivity {
 
     @Override public boolean onCreateOptionsMenu(Menu menu) {
         if (showDelete){
-            getMenuInflater().inflate(R.menu.__picker_menu_preview, menu);
+            getMenuInflater().inflate(R.menu.campicker_menu_preview, menu);
         }
         return true;
     }

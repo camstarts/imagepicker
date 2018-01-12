@@ -29,12 +29,17 @@ import static com.camstarts.campicker.PhotoPicker.EXTRA_SHOW_CAMERA;
 import static com.camstarts.campicker.PhotoPicker.EXTRA_SHOW_GIF;
 import static com.camstarts.campicker.PhotoPicker.KEY_SELECTED_PHOTOS;
 
+
+/**
+ * Created by Cam Starts on 18/1/12.
+ * Builder class to ease Intent setup.
+ */
+
 public class PhotoPickerActivity extends AppCompatActivity {
 
     private PhotoPickerFragment pickerFragment;
     private ImagePagerFragment imagePagerFragment;
     private MenuItem menuDoneItem;
-
     private int maxCount = DEFAULT_MAX_COUNT;
 
     /**
@@ -101,8 +106,7 @@ public class PhotoPickerActivity extends AppCompatActivity {
                 }
 
                 if (selectedItemCount > maxCount) {
-                    Toast.makeText(getActivity(), getString(R.string.__picker_over_max_count_tips, maxCount),
-                            LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), getString(R.string.__picker_over_max_count_tips, maxCount), LENGTH_LONG).show();
                     return false;
                 }
                 if (maxCount > 1) {
@@ -116,7 +120,6 @@ public class PhotoPickerActivity extends AppCompatActivity {
 
     }
 
-    //刷新右上角按钮文案
     public void updateTitleDoneItem() {
         if (menuIsInflated) {
             if (pickerFragment != null && pickerFragment.isResumed()) {
@@ -130,7 +133,6 @@ public class PhotoPickerActivity extends AppCompatActivity {
                 }
 
             } else if (imagePagerFragment != null && imagePagerFragment.isResumed()) {
-                //预览界面 完成总是可点的，没选就把默认当前图片
                 menuDoneItem.setEnabled(true);
             }
 
@@ -165,7 +167,7 @@ public class PhotoPickerActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         if (!menuIsInflated) {
-            getMenuInflater().inflate(R.menu.__picker_menu_picker, menu);
+            getMenuInflater().inflate(R.menu.campicker_menu_picker, menu);
             menuDoneItem = menu.findItem(R.id.done);
             if (originalPhotos != null && originalPhotos.size() > 0) {
                 menuDoneItem.setEnabled(true);

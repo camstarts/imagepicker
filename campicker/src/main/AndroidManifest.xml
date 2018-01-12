@@ -7,8 +7,14 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application>
-        <activity android:name=".PhotoPickerActivity" />
-        <activity android:name=".PhotoPagerActivity"></activity>
+        <provider
+            android:name=".utils.PhotoFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/campicker_provider_paths"/>
+        </provider>
     </application>
 
 </manifest>

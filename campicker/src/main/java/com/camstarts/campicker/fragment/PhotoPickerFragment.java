@@ -54,16 +54,12 @@ public class PhotoPickerFragment extends Fragment {
 
   private ImageCaptureManager captureManager;
   private PhotoGridAdapter photoGridAdapter;
-
   private PopupDirectoryListAdapter listAdapter;
-  //所有photos的路径
   private List<PhotoDirectory> directories;
-  //传入的已选照片
-  private ArrayList<String> originalPhotos;
 
+  private ArrayList<String> originalPhotos;
   private int SCROLL_THRESHOLD = 30;
   int column;
-  //目录弹出框的一次最多显示的目录数目
   public static int COUNT_MAX = 4;
   private final static String EXTRA_CAMERA = "camera";
   private final static String EXTRA_COLUMN = "column";

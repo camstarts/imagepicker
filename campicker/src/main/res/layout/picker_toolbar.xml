@@ -6,6 +6,7 @@
     android:layout_height="?attr/actionBarSize"
     android:minHeight="?attr/actionBarSize"
     android:theme="?attr/actionBarTheme"
+    app:titleTextColor="#FFFFFF"
     app:popupTheme="?attr/actionBarPopupTheme"
-    android:background="#006699"
+    android:background="?attr/colorPrimary"
     android:id="@+id/toolbar"/>

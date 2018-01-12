@@ -81,8 +81,8 @@ public class PopupDirectoryListAdapter extends BaseAdapter {
       options.dontAnimate()
           .dontTransform()
           .override(800, 800)
-          .placeholder(R.drawable.picker_ic_photo)
-          .error(R.drawable.ic_broken_image_black);
+          .placeholder(R.drawable.ic_campicker_photo)
+          .error(R.drawable.ic_campicker_photo_broken);
       glide.setDefaultRequestOptions(options)
           .load(directory.getCoverPath())
           .thumbnail(0.1f)
