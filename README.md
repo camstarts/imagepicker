@@ -16,6 +16,6 @@ allprojects {
 Step 2. Add the dependency
 ```
 dependencies {
-	        compile 'com.github.camstarts:imagepicker:v1.0.2'
+	        compile 'com.github.camstarts:imagepicker:v1.1.0'
 	}
 ```
