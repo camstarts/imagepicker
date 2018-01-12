@@ -1,10 +1,6 @@
 package com.camstarts.campicker.entity;
 
-/**
- * Created by donglua on 15/6/30.
- */
 public class Photo {
-
   private int id;
   private String path;
 

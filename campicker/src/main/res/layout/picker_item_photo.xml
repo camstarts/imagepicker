@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<me.iwf.photopicker.widget.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.camstarts.campicker.widget.SquareItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
+
   <ImageView
       android:padding="1dip"
       android:layout_gravity="center"
       android:id="@+id/iv_photo"
       android:scaleType="centerCrop"
       android:layout_width="match_parent"
-      android:background="@drawable/picker_photo_bg"
+      android:background="@drawable/picker_ic_photo"
       android:layout_height="match_parent"
       android:adjustViewBounds="true" />
 
@@ -30,4 +31,4 @@
       android:paddingEnd="10dip"
       android:paddingStart="20dip" />
 
-</me.iwf.photopicker.widget.SquareItemLayout>
+</com.camstarts.campicker.widget.SquareItemLayout>

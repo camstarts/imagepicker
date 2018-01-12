@@ -7,5 +7,5 @@
     android:minHeight="?attr/actionBarSize"
     android:theme="?attr/actionBarTheme"
     app:popupTheme="?attr/actionBarPopupTheme"
-    android:background="?attr/colorPrimary"
+    android:background="#006699"
     android:id="@+id/toolbar"/>

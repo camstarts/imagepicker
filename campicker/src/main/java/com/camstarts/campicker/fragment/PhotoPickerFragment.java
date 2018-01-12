@@ -138,7 +138,7 @@ public class PhotoPickerFragment extends Fragment {
   @Override public View onCreateView(LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
 
-    final View rootView = inflater.inflate(R.layout.__picker_fragment_photo_picker, container, false);
+    final View rootView = inflater.inflate(R.layout.picker_fragment_photo_picker, container, false);
 
     RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.rv_photos);
     StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(column, OrientationHelper.VERTICAL);

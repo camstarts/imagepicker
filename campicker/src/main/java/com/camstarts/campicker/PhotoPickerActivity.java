@@ -194,10 +194,8 @@ public class PhotoPickerActivity extends AppCompatActivity {
             if (pickerFragment != null) {
                 selectedPhotos = pickerFragment.getPhotoGridAdapter().getSelectedPhotoPaths();
             }
-            //当在列表没有选择图片，又在详情界面时默认选择当前图片
             if (selectedPhotos.size() <= 0) {
                 if (imagePagerFragment != null && imagePagerFragment.isResumed()) {
-                    // 预览界面
                     selectedPhotos = imagePagerFragment.getCurrentPath();
                 }
             }
