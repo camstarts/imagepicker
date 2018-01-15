@@ -8,7 +8,7 @@ import android.support.v4.content.CursorLoader;
 import static android.provider.MediaStore.MediaColumns.MIME_TYPE;
 
 /**
- * Created by 黄东鲁 on 15/6/28.
+ * Created by Cam Starts on 18/1/12.
  */
 public class PhotoDirectoryLoader extends CursorLoader {
 

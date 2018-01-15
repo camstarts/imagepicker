@@ -6,7 +6,7 @@ import java.util.List;
 import com.camstarts.campicker.utils.FileUtils;
 
 /**
- * Created by donglua on 15/6/28.
+ * Created by Cam Starts on 18/1/12.
  */
 public class PhotoDirectory {
 

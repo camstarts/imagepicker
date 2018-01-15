@@ -388,7 +388,7 @@ public class TouchImageView extends android.support.v7.widget.AppCompatImageView
     resetZoom();
     scaleImage(scale, viewWidth / 2, viewHeight / 2, true);
     matrix.getValues(m);
-    m[Matrix.MTRANS_X] = -((focusX * getImageWidth()) - (viewWidth * 0.5f));
+    m[Matrix.MTRANS_X] = -((focusX * getImageWidth()) - (viewWidth * 0.f));
     m[Matrix.MTRANS_Y] = -((focusY * getImageHeight()) - (viewHeight * 0.5f));
     matrix.setValues(m);
     fixTrans();
